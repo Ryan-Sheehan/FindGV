@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './components/App';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/FindGV">
     <App />
   </BrowserRouter>,
   document.getElementById('root'),
