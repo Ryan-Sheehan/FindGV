@@ -7,9 +7,8 @@ import s from '../styles/exampleComponent.style';
 
 const ExamplePageText = () => (
   <p style={s.p}>
-    This is an example page. Refresh the page or copy/paste the url to
-    test out the redirect functionality (this same page should load
-      after the redirect).
+    A fun way to find a new place to eat
+    <img src="./logo.png"/>
   </p>
 );
 

@@ -31,7 +31,7 @@ export default function App() {
           touchActive={{}}
           touchActiveTapOnly
         >
-          Site by <span {...s.childLink}>Ryan Sheehna</span>
+          Site by <span {...s.childLink}>Ryan Sheehan</span>
         </Interactive>
       </div>
     </div>
