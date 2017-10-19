@@ -18,15 +18,15 @@ export default function Home() {
         <Interactive
           as={Link}
           {...s.link}
-          to="/example"
-        >Example page</Interactive>
+          to="/posts"
+        >Posts</Interactive>
       </div>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=foo&field2=bar#boom!"
-        >Example two deep with query and hash</Interactive>
+          to="/posts/post_10_19_2017?field1=foo&field2=bar#boom!"
+        >October 19, 2017</Interactive>
       </div>
     </div>
   );

@@ -1,40 +1,40 @@
 import React from 'react';
 import Interactive from 'react-interactive';
 import { Switch, Route, Link } from 'react-router-dom';
-import ExampleTwoDeepComponent from './ExampleTwoDeepComponent';
+import Post_10_19_2017 from './Post_10_19_2017';
 import PageNotFound from './PageNotFound';
-import s from '../styles/exampleComponent.style';
+import s from '../styles/posts.style';
 
-const ExamplePageText = () => (
+const PageText = () => (
   <p style={s.p}>
     A fun way to find a new place to eat
     <img src="./logo.png"/>
   </p>
 );
 
-export default function ExampleComponent() {
+export default function Posts() {
   return (
     <Switch>
       <Route
-        exact path="/example/two-deep"
+        exact path="/posts/post_10_19_2017"
         render={({ location }) => (
           <div>
-            <ExamplePageText />
-            <ExampleTwoDeepComponent location={location} />
+            <PageText />
+            <Post location={location} />
           </div>
         )}
       />
       <Route
-        exact path="/example"
+        exact path="/posts"
         render={() => (
           <div>
-            <ExamplePageText />
+            <PageText />
             <div style={s.pageLinkContainer}>
               <Interactive
                 as={Link}
                 {...s.link}
-                to="/example/two-deep?field1=foo&field2=bar#boom!"
-              >Example two deep with query and hash</Interactive>
+                to="/posts/post_10_19_2017?field1=foo&field2=bar#boom!"
+              >Posts</Interactive>
             </div>
           </div>
         )}

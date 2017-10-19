@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import Interactive from 'react-interactive';
 import { Link } from 'react-router-dom';
 import { Li } from '../styles/style';
-import s from '../styles/exampleTwoDeepComponent.style';
+import s from '../styles/post.style';
 
 const propTypes = {
   location: PropTypes.object.isRequired,
 };
 
-export default function ExampleTwoDeepComponent({ location }) {
+export default function Post_10_19_2017({ location }) {
   const queryPresent = location.search !== '';
   const hashPresent = location.hash !== '';
 
@@ -38,7 +38,7 @@ export default function ExampleTwoDeepComponent({ location }) {
       <div style={s.lineContainer}>
         <Interactive
           as={Link}
-          to={`/example/two-deep${queryString}${hashFragment}`}
+          to={`/posts/post_10_19_2017${queryString}${hashFragment}`}
           {...s.link}
         >{linkText}</Interactive>
       </div>
@@ -77,4 +77,4 @@ export default function ExampleTwoDeepComponent({ location }) {
   );
 }
 
-ExampleTwoDeepComponent.propTypes = propTypes;
+Post_10_19_2017.propTypes = propTypes;
