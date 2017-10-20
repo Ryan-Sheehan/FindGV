@@ -18,14 +18,7 @@ export default function Home() {
         <Interactive
           as={Link}
           {...s.link}
-          to="/posts"
-        >Posts</Interactive>
-      </div>
-      <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/posts/post_10_19_2017?field1=foo&field2=bar#boom!"
+          to="/posts/post_10_19_2017"
         >October 19, 2017</Interactive>
       </div>
     </div>

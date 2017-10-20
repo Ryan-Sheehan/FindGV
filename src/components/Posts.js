@@ -7,7 +7,7 @@ import s from '../styles/posts.style';
 
 const PageText = () => (
   <p style={s.p}>
-    A fun way to find a new place to eat
+    Weekly updates about FindGV's development process
     <img src="./logo.png"/>
   </p>
 );
@@ -20,10 +20,11 @@ export default function Posts() {
         render={({ location }) => (
           <div>
             <PageText />
-            <Post location={location} />
+            <Post_10_19_2017 location={location} />
           </div>
         )}
       />
+      
       <Route
         exact path="/posts"
         render={() => (
@@ -33,8 +34,8 @@ export default function Posts() {
               <Interactive
                 as={Link}
                 {...s.link}
-                to="/posts/post_10_19_2017?field1=foo&field2=bar#boom!"
-              >Posts</Interactive>
+                to="/posts/post_10_19_2017"
+              >October, 19 2017</Interactive>
             </div>
           </div>
         )}
