@@ -19,7 +19,6 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/posts" component={Posts} />
-        <Route component={PageNotFound} />
       </Switch>
 
       <div style={s.creditLine}>

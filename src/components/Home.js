@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <p style={s.p}>
-        First entry soon come
+        First entry coming soon
       </p>
       <p style={s.p}>
         Founders: Ryan Sheehan & Jeffrey Bui
@@ -18,8 +18,8 @@ export default function Home() {
         <Interactive
           as={Link}
           {...s.link}
-          to="/posts/post_10_19_2017"
-        >October 19, 2017</Interactive>
+          to="/posts"
+        >Posts</Interactive>
       </div>
     </div>
   );
