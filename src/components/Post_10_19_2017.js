@@ -14,9 +14,9 @@ export default function Post_10_19_2017({ location }) {
       </div>
       <div style={s.lineContainer}>
         What is good
-        <img src={mock_one} alt="mock_one"/>
-        <img src={mock_two} alt="mock_two"/>
-        <img src={mock_three} alt="mock_three"/>
+        <img src={mock_one} alt={"mock_one"}/>
+        <img src={mock_two} alt={"mock_two"}/>
+        <img src={mock_three} alt={"mock_three"}/>
       </div>
     </div>
   );
